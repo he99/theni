@@ -900,11 +900,11 @@ def main():
         logger.error(err)
         sys.exit(__doc__)
 
-    log_level = logging.WARN
+    log_level = logging.INFO # logging.WARN
 
     config = None
     xvcs = 'svn'
-    vcs_base = '../eni/'
+    vcs_base = '../../eni-data/'
 
     for o, a in opts:
         if o in ('-c', '--config'):
